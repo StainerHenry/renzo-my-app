@@ -1,0 +1,19 @@
+.theme-light:root {
+    --tv-color-pane-background: transparent;
+}
+
+:root {
+    --tv-color-pane-background: #121212;
+    --tv-color-platform-background: #0A0A0A;
+    --tv-color-toolbar-button-background-hover: #1b1c35;
+    --tv-color-toolbar-button-background-secondary-hover: #514c64;
+    --tv-color-toolbar-button-background-expanded: #1c1d34;
+    --tv-color-toolbar-button-text: #fff;
+    --tv-color-toolbar-button-text-hover: #fff;
+    --tv-color-toolbar-button-text-active: #fff;
+    --tv-color-toolbar-button-text-active-hover: #fff;
+}
+
+[data-name="legend-source-title"] {
+    color: white !important;
+}

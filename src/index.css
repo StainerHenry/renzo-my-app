@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Haas";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url("/public/fonts/NeueHaasDisplayMediu.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Haas";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url("/public/fonts/NeueHaasDisplayBold.ttf") format("truetype");
+}
+
+html {}
+
+body {
+  background: #070707;
+  color: white;
+  margin: 0;
+  line-height: inherit;
+  font-family: Haas;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+input:not([type="file" i], [type="image" i], [type="checkbox" i], [type="radio" i]) {}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+input {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+tbody td {
+  border: 1px solid #292929;
+}
+
+tbody td:not(:last-child) {
+  min-width: 100px;
+}
+
+tbody td:nth-child(7) {
+  min-width: 150px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  background-image: -webkit-linear-gradient(90deg, #FF0F50 0%, #C263EC 30.04%, #12ABFF 51.29%, #39D3D9 65.51%, #4BF9D4 88.5%, #00FF8D 100%);
+  background-image: -moz-linear-gradient(90deg, #FF0F50 0%, #C263EC 30.04%, #12ABFF 51.29%, #39D3D9 65.51%, #4BF9D4 88.5%, #00FF8D 100%);
+  background-image: -o-linear-gradient(90deg, #FF0F50 0%, #C263EC 30.04%, #12ABFF 51.29%, #39D3D9 65.51%, #4BF9D4 88.5%, #00FF8D 100%);
+  background-image: linear-gradient(90deg, #FF0F50 0%, #C263EC 30.04%, #12ABFF 51.29%, #39D3D9 65.51%, #4BF9D4 88.5%, #00FF8D 100%);
+  border-radius: 0px;
+}
+
+input[type="range"]::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(90deg, transparent, transparent 5px, #070707 5px, #070707 10px, transparent 10px);
+  z-index: 1;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 8px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 999;
+  position: relative;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: gray;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
